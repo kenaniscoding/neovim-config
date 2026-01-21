@@ -17,8 +17,8 @@ end
 -- KEY SHORTCUT
 -- Leader + f to search files 
 vim.keymap.set('n', '<leader>f', ':FZF<CR>', { silent = true })
--- Leader + n to toggle the file explorer
-vim.keymap.set('n', '<leader>t', ':NERDTreeToggle<CR>', { silent = true })
+-- Leader + e to toggle the file explorer
+vim.keymap.set('n', '<leader>e', ':NERDTreeToggle<CR>', { silent = true })
 -- Leader + s to source your config from any file
 vim.keymap.set('n', '<leader>su', ':source $MYVIMRC<CR>', { silent = true })
 -- Leader + i to PlugInstall 
@@ -27,11 +27,11 @@ vim.keymap.set('n', '<leader>pi', ':PlugInstall<CR>', { silent = true })
 vim.keymap.set('n', '<leader>pu', ':PlugUpdate<CR>', { silent = true })
 -- Leader + c to PlugClean 
 vim.keymap.set('n', '<leader>pc', ':PlugClean<CR>', { silent = true })
--- Shift + h and Shift + l to cycle through open files
+-- Shift + h and Shift + h to cycle through open files
 vim.keymap.set('n', '<S-l>', ':BufferLineCycleNext<CR>', { silent = true })
 vim.keymap.set('n', '<S-h>', ':BufferLineCyclePrev<CR>', { silent = true })
 -- Leader + x to close the current tab/buffer
-vim.keymap.set('n', '<leader>x', ':bdelete<CR>', { silent = true })
+vim.keymap.set('n', '<leader>wx', ':bdelete<CR>', { silent = true })
 
 -- Split Management (using Leader + s for "split")
 vim.keymap.set('n', '<leader>sv', '<C-w>v', { desc = 'Split window vertically' })
