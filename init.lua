@@ -31,7 +31,8 @@ vim.keymap.set('n', '<leader>pc', ':PlugClean<CR>', { silent = true })
 vim.keymap.set('n', '<S-l>', ':BufferLineCycleNext<CR>', { silent = true })
 vim.keymap.set('n', '<S-h>', ':BufferLineCyclePrev<CR>', { silent = true })
 -- Leader + wx to close the current tab/buffer
-vim.keymap.set('n', '<leader>wx', ':bdelete<CR>', { silent = true })
+-- vim.keymap.set('n', '<leader>wx', ':bdelete<CR>', { silent = true })
+vim.keymap.set('n', '<leader><Esc>', ':bdelete<CR>', { silent = true })
 
 -- Split Management (using Leader + s for "split")
 vim.keymap.set('n', '<leader>wv', '<C-w>v', { desc = 'Split window vertically' })
@@ -148,7 +149,7 @@ vim.keymap.set('n', '<leader>b', fzf.buffers, opts)
 
 -- Search (Ag style)
 vim.keymap.set('n', '<leader>lg', ':Ag ', { silent = false }) -- Prompt for pattern
-vim.keymap.set('n', '<leader>aw', fzf.grep_cword, opts)        -- Ag word under cursor
+-- vim.keymap.set('n', '<leader>aw', fzf.grep_cword, opts)        -- Ag word under cursor
 vim.keymap.set('n', '<leader>ag', fzf.live_grep, opts)        -- Modern Live Grep
 
 -- Help & History
