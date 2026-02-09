@@ -35,10 +35,11 @@ vim.keymap.set('n', '<S-h>', ':BufferLineCyclePrev<CR>', { silent = true })
 vim.keymap.set('n', '<leader><Esc>', ':bdelete<CR>', { silent = true })
 
 -- Split Management (using Leader + s for "split")
-vim.keymap.set('n', '<leader>wv', '<C-w>v', { desc = 'Split window vertically' })
-vim.keymap.set('n', '<leader>wh', '<C-w>s', { desc = 'Split window horizontally' })
-vim.keymap.set('n', '<leader>wx', '<C-w>q', { desc = 'Close current split' })
-vim.keymap.set('n', '<leader>wo', '<C-w>o', { desc = 'Close all OTHER splits' })
+-- vim.keymap.set('n', '<leader>wv', '<C-w>v', { desc = 'Split window vertically' })
+-- vim.keymap.set('n', '<leader>wh', '<C-w>s', { desc = 'Split window horizontally' })
+-- vim.keymap.set('n', '<leader>wx', '<C-w>q', { desc = 'Close current split' })
+-- vim.keymap.set('n', '<leader>wo', '<C-w>o', { desc = 'Close all OTHER splits' })
+
 -- Leader + gg to open Lazygit (the main shortcut)
 vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>", { desc = "LazyGit" })
 -- Leader + gf to open Lazygit for the current file only
